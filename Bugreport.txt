@@ -1,0 +1,16 @@
+ Bag report 001
+ Summary: - Crush id-line after clicking button "Enter"
+ Project: - New Project
+ Environment: - Stage version
+ Severity: - Critical
+ Priority: - High
+ Status: - New
+ Author: - Serhii
+ Assigned To: - Developer
+ Steps to Reproduce: - 1)Open www.opensite.com
+                       2)Click "Sign in" button
+                       3)Enter your login and password
+                       4)Click "Enter" button
+ Result: - Crushed page
+ Expected Result: - Go to the home page of the www.opensite.com
+ Attachment: - jpeg.file 
