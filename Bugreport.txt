@@ -1,4 +1,4 @@
- Bag report 001
+           Bug report 001
  Summary: - Crush id-line after clicking button "Enter"
  Project: - New Project
  Environment: - Stage version
