@@ -1,0 +1,123 @@
+serhii@MacBook-Air-Serhii ~> mkdir HOMEWORK_2.2
+serhii@MacBook-Air-Serhii ~> cd  HOMEWORK_2.2
+serhii@MacBook-Air-Serhii ~/HOMEWORK_2.2> open ./
+serhii@MacBook-Air-Serhii ~/HOMEWORK_2.2> git clone git@github.com:KIRWEY/HOMEWORK_2.2.git
+   
+   1. На локальном репозитории сделать ветки для:
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git branch Bug_Reports 
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git branch  Charles
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git branch  CheckLists
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git branch  Jmeter
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git branch  Mobile_testing
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git branch  Postman
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git branch  SQL
+
+
+       2. Запушить все ветки на внешний репозиторий
+
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git push --all
+Всего 0 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+To github.com:KIRWEY/HOMEWORK_2.2.git
+ * [new branch]      Bug_Reports -> Bug_Reports
+ * [new branch]      Charles -> Charles
+ * [new branch]      CheckLists -> CheckLists
+ * [new branch]      Jmeter -> Jmeter
+ * [new branch]      Mobile_testing -> Mobile_testing
+ * [new branch]      Postman -> Postman
+ * [new branch]      SQL -> SQL
+
+      3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+
+ serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git checkout Bug_reports
+Переключено на ветку «Bug_reports»
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (Bug_reports)> vim Bugreport.txt
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (Bug_reports)> git add Bugreport.txt
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (Bug_reports)> git commit -m "Create Bugreport.txt"
+[Bug_reports 3f9e0de] Create Bugreport.txt
+ 1 file changed, 16 insertions(+)
+ create mode 100644 Bugreport.txt
+   
+    4. Запушить структуру багрепорта на внешний репозиторий
+
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (Bug_reports) [128]> git push --set-upstream origin Bug_Reports
+Перечисление объектов: 4, готово.
+Подсчет объектов: 100% (4/4), готово.
+При сжатии изменений используется до 8 потоков
+Сжатие объектов: 100% (3/3), готово.
+Запись объектов: 100% (3/3), 575 байтов | 575.00 КиБ/с, готово.
+Всего 3 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+To github.com:KIRWEY/HOMEWORK_2.2.git
+   7198773..a5b2ff3  Bug_Reports -> Bug_Reports
+Ветка «Bug_Reports» отслеживает внешнюю ветку «Bug_Reports» из «origin».
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (Bug_reports)> 
+       
+       5. Вмержить ветку Bag Reports в Main
+
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (Bug_reports)> git checkout main
+Переключено на ветку «main»
+Ваша ветка обновлена в соответствии с «origin/main».
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git merge Bug_reports
+Обновление 7198773..a5b2ff3
+Fast-forward
+ Bugreport.txt | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+ create mode 100644 Bugreport.txt
+ 
+   6. Запушить main на внешний репозиторий.
+
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main) [128]> git push
+Всего 0 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+To github.com:KIRWEY/HOMEWORK_2.2.git
+   7198773..a5b2ff3  main -> main
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> 
+
+  7. В ветке CheckLists набросать структуру чек листа.
+
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git checkout CheckLists
+Переключено на ветку «CheckLists»
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (CheckLists)> vim Checklist.txt
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (CheckLists)> git add Checklist.txt
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (CheckLists)> git commit -m "Create Checklist..txt"
+[CheckLists e057b5e] Create Checklist..txt
+ 1 file changed, 17 insertions(+)
+ create mode 100644 Checklist.txt
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (CheckLists)>              
+
+      8. Запушить структуру на внешний репозиторий
+
+ serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (CheckLists) [128]> git push --set-upstream origin CheckLists
+Перечисление объектов: 4, готово.
+Подсчет объектов: 100% (4/4), готово.
+При сжатии изменений используется до 8 потоков
+Сжатие объектов: 100% (3/3), готово.
+Запись объектов: 100% (3/3), 560 байтов | 560.00 КиБ/с, готово.
+Всего 3 (изменений 0), повторно использовано 0 (изменений 0), повторно использовано пакетов 0
+To github.com:KIRWEY/HOMEWORK_2.2.git
+   7198773..e057b5e  CheckLists -> CheckLists
+Ветка «CheckLists» отслеживает внешнюю ветку «CheckLists» из «origin».
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (CheckLists)> 
+     
+      9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+ Ветка «Bug_Reports» отслеживает внешнюю ветку «Bug_Reports» из «origin».
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (Bug_reports)> 
+     
+       10. Синхронизировать Внешнюю и Локальную ветки Main
+ serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (Bug_reports)> git checkout main
+Переключено на ветку «main»
+Ваша ветка обновлена в соответствии с «origin/main».
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Распаковка объектов: 100% (4/4), 1.45 КиБ | 370.00 КиБ/с, готово.
+Из github.com:KIRWEY/HOMEWORK_2.2
+   a5b2ff3..ffb9deb  main       -> origin/main
+Обновление a5b2ff3..ffb9deb
+Fast-forward
+ Bugreport.txt |  2 +-
+ Checklist.txt | 17 +++++++++++++++++
+ 2 files changed, 18 insertions(+), 1 deletion(-)
+ create mode 100644 Checklist.txt
+serhii@MacBook-Air-Serhii ~/H/HOMEWORK_2.2 (main)> 
+      
