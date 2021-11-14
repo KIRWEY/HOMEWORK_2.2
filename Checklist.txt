@@ -1,0 +1,17 @@
+
+   
+ Test ID: - Test case 002
+ Created By: - Serhii
+ Reviewed By: - Developer
+ Prioryty: - Low
+   Title: - Verification of login
+ Description: - Verification  of login 
+ Test Step                         Expected Result              Actual Result
+Launch the website URL in Chrome Website launch successfully      As expected
+Enter valid username       Successful login                       As expected
+Enter valid password
+Click on login button
+
+Enter valid username      
+Enter invalid password    error message: "invalid                As expected
+                            username  or password"                              Click on login buttom
